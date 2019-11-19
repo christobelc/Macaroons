@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap 4 Website Layout</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="info-css/main.css" rel="stylesheet" />
+  </head>
+  <!-- this highlights the nav bar sections as we scroll down  -->
+  <body>
+    <!-- home section -->
+    <div id="home">
+      <!-- nav section -->
+      <!-- expand on the medium screen width 768px mark -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a href="index.html" class="navbar-brand"
+          ><img src="img/macaron_PNG104.png" alt="" />Macarons</a
+        >
+        <!-- the data-target is the id that we gave in the body above for highlighting the scrolling  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- this is the navlinks section with the id instead of the references above -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a href="information.html" class="nav-link this-page">Eating Contest Results</a>
+            </li>
+            <li class="nav-item">
+              <a href="typesof.html" class="nav-link">Types of Macarons</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container narrow text-center">
+            <h2>Results!</h2>
+            <hr class="my-3">
+            <img src="img/macarons-itsover.jpg" class="col-md-6" alt="" style="float: left;">
+            <p class="desc col-md-6" style="float: right;">
+              As it stood, the record for the most macarons consumed in 10 minutes was 6.23 pounds, but that record was completely obliterated at the Martorano's Masters World Macaron Eating Championship, October 17.A slew of competitors, from a 50-year-old eater they call "William Wallace," to a petite 115-pound woman known as the "The Milk Way Kid," all viciously stuffed macarons down their throats, trying to win the 2-foot high macaron eating championship trophy, and show that sugar mean nothing to them.
+            </p>
+
+            <p class="desc col-md-6" style="float: right;">
+              In just 10 minutes, these competitive monsters went from almost swallowing the boxes whole, to regretting their life decisions and slowly getting defeated by the diabetes-filled feast.
+              If you've never experienced an eating competition, just know things can get pretty intense. Thankfully I recorded the results I witnessed during the championship.
+            </p>
+           
+            <table class="table">
+              <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Number of Macarons consumed</th>
+              </tr>
+              <tr>
+                <td>Peter Parker</td>
+                <td>USA</td>
+                <td>403</td>
+              </tr>
+              <tr>
+                <td>William Wallace</td>
+                <td>Scotland</td>
+                <td>4011</td>
+              </tr>
+              <tr>
+                <td>Ernst Hemmingway</td>
+                <td>USA</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Bono</td>
+                <td>Ireland</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Laurel Hardy</td>
+                <td>UK</td>
+                <td>302</td>
+              </tr>
+              <tr>
+                <td>Milky Bar Kid</td>
+                <td>Sweeden</td>
+                <td>1</td>
+              </tr>
+            </table>
+          </div>
+    
+<!-- script source files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+</html>

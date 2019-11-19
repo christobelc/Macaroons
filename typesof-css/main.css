@@ -1,0 +1,55 @@
+.navbar-dark .navbar-nav li .this-page {
+  color: #50cfa5 !important;
+}
+
+.jumbotron {
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+}
+
+.jumbotron .heading-underline {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1.9rem 0;
+}
+
+.jumbotron .heading-underline .my-4 {
+  padding-bottom: 1.9rem;
+}
+
+.typesOfMacarons {
+  overflow: hidden;
+}
+
+.typesOfMacarons img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.typesOfMacarons img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+/* this removes the padding inbetween the pictures. I have no idea now this is done lol */
+.row.no-padding [class*="col-"] {
+  padding: 0;
+}
+
+/* -------media queries -------- */
+@media (max-width: 576px) {
+  #information .ctn h1 {
+    font-size: 48px;
+  }
+}
+
+/* this removes the padding inbetween the pictures. I have no idea now this is done lol */
+/*# sourceMappingURL=main.css.map */

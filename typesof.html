@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap 4 Website Layout</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="typesof-css/main.css" rel="stylesheet" />
+  </head>
+  <!-- this highlights the nav bar sections as we scroll down  -->
+  <body>
+    <!-- home section -->
+    <div id="home">
+      <!-- nav section -->
+      <!-- expand on the medium screen width 768px mark -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a href="index.html" class="navbar-brand"
+          ><img src="img/macaron_PNG104.png" alt="" />Macarons</a
+        >
+        <!-- the data-target is the id that we gave in the body above for highlighting the scrolling  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- this is the navlinks section with the id instead of the references above -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a href="information.html" class="nav-link">Eating Contest Results</a>
+            </li>
+            <li class="nav-item">
+              <a href="typesof.html" class="nav-link this-page">Types of Macarons</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<!-- information section  -->
+<div id="information" class="offset">
+    <div class="ctn col-12 narrow text-center">
+      <h1>French macarons!</h1>
+      <hr class="my-3" />
+      <p class="lead">
+        A macaron or French macaroon is a sweet meringue-based confection made
+        with egg white, icing sugar, granulated sugar, almond meal, and food
+        coloring.
+      </p>
+    </div>
+  </div>
+
+  <!-- portfolio section  -->
+  <div id="portfolio" class="offset">
+    <div class="jumbotron container-fluid">
+      <h3 class="heading-underline">Types of Macarons</h3>
+      <hr class="my-4 narrow" />
+
+      <!-- the no padding is not a bootstrap class our own defined class we need this to remove the padding between the colums fo the images -->
+      <div class="row no-padding">
+        <!-- its going to make the transition at the 576px range to one picture per row -->
+        <div class="col-sm-4">
+          <div class="typesOfMacarons">
+            <a href="img/yellow.jpg" target="_blank">
+              <img src="img/yellow.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="typesOfMacarons">
+            <a href="img/blue1.jpg" target="_blank">
+              <img src="img/blue1.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="typesOfMacarons">
+            <a href="img/green1.jpg" target="_blank">
+              <img src="img/green1.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="typesOfMacarons">
+            <a href="img/pink.jpg" target="_blank">
+              <img src="img/pink.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="typesOfMacarons">
+            <a href="img/purple.jpg" target="_blank">
+              <img src="img/purple.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="typesOfMacarons">
+            <a href="img/red1.jpg" target="_blank">
+              <img src="img/red1.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="narrow text-center">
+          <!-- this has some padding to and bottom -->
+          <div class="col-12">
+            <p class="lead">
+              Want to learn more about the origins of the Macaron
+            </p>
+            <button
+              type="button"
+              class="btn button-style btn-outline-secondary btn-lg"
+            >
+              <a
+                href="https://en.wikipedia.org/wiki/Macaron#History"
+                target="_blank"
+                >More Information</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- end of row -->
+      </div>
+    </div>
+  </div>
+  <!-- this is the end of the jumbotron -->
+      
+    
+<!-- script source files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+</html>

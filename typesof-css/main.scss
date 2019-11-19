@@ -1,0 +1,50 @@
+.navbar-dark .navbar-nav li .this-page {
+  color: rgb(80, 207, 165) !important;
+}
+
+// jumbotron section ---
+
+.jumbotron {
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+
+  .heading-underline {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1.9rem 0;
+  }
+
+  .heading-underline .my-4 {
+    padding-bottom: 1.9rem;
+  }
+}
+
+// ---jumbotron end--------
+
+// ------image gallery part------
+
+.typesOfMacarons {
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.5s ease;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+    cursor: zoom-in;
+  }
+}
+
+/* this removes the padding inbetween the pictures. I have no idea now this is done lol */
+.row.no-padding [class*="col-"] {
+  padding: 0;
+}
+
+// ------ end of image gallery part------
+
+/* this removes the padding inbetween the pictures. I have no idea now this is done lol */

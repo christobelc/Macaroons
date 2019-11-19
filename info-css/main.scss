@@ -1,0 +1,71 @@
+$colors: (
+  accent: #fff6bb
+);
+
+$paddings: (
+  small: 15px,
+  large: 20px,
+  bottom: 100px
+);
+
+$fontSizes: (
+  paragrah: 20px,
+  heading-full: 64px,
+  heading-reduced: 48px
+);
+
+@function fontSize($typeOfText) {
+  @return map-get($fontSizes, $typeOfText);
+}
+
+@function padding($amount) {
+  @return map-get($paddings, $amount);
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+.navbar-dark .navbar-nav li .this-page {
+  color: rgb(80, 207, 165) !important;
+}
+
+body {
+  margin-top: 65px;
+  background-color: #e9ecef;
+}
+
+.container {
+  h2 {
+    text-transform: uppercase;
+    padding: padding(large);
+    font-size: fontSize(heading-full);
+    font-weight: 700;
+  }
+
+  .desc {
+    justify-items: center;
+    font-size: fontSize(paragrah);
+  }
+
+  // -----  table section -----
+  .table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+      font-size: fontSize(paragrah);
+    }
+
+    td,
+    th {
+      border: 2px solid Black;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  }
+}

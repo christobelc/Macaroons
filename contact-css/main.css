@@ -1,0 +1,18 @@
+.navbar-dark .navbar-nav li .this-page {
+  color: #50cfa5 !important;
+}
+
+body .info-ctn {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 700;
+  padding-top: 100px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+body .form-ctn {
+  width: 75%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */

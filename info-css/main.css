@@ -1,0 +1,48 @@
+.navbar-dark .navbar-nav li .this-page {
+  color: #50cfa5 !important;
+}
+
+body {
+  margin-top: 65px;
+  background-color: #e9ecef;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.container .desc {
+  justify-items: center;
+  font-size: 20px;
+}
+
+.container .table {
+  margin-top: 50px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.container .table tr {
+  font-size: 20px;
+}
+
+.container .table td,
+.container .table th {
+  border: 2px solid Black;
+  padding: 8px;
+}
+
+.container .table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* -------media queries -------- */
+@media (max-width: 576px) {
+  .container h2 {
+    font-size: 48px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
